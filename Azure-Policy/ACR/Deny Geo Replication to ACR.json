@@ -5,10 +5,10 @@
   "mode": "All",
   "description": "Created 8/18/2022 for Datadog. Denies ACR to use geo-replication.",
   "metadata": {
-   "createdBy": "8a4a19c5-41f9-4a94-bd44-ba0cf92f2833",
-   "createdOn": "2022-08-18T12:59:59.2352847Z",
-   "updatedBy": "8a4a19c5-41f9-4a94-bd44-ba0cf92f2833",
-   "updatedOn": "2022-08-18T13:17:28.3535868Z",
+   "createdBy": "",
+   "createdOn": "",
+   "updatedBy": "",
+   "updatedOn": "",
    "category": "Container Registry"
   },
   "parameters": {},
