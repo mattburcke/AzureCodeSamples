@@ -2,14 +2,14 @@
 Connect-AzAccount -Identity
 
 # Set variables
-$subscriptionId = "0d77cf6e-ce0a-4303-8ccb-a5f997fdc950"
+$subscriptionId = "your-subscription-id""
 $resourceGroupName = "rg-redhatautomation"
 $vmName = "testvm"
-$location = "canadacentral"
+$location = "your-region" # e.g., "East US", "West Europe"
 $galleryName = "gallery"
 $imageDefinitionName = "definition-main"
 $imageVersion = "0.0.1"
-$adminUsername = "mburckeadmin"
+$adminUsername = "your username"
 $adminPassword = "" | ConvertTo-SecureString -AsPlainText -Force
 $vmSize = "Standard_B2as_v2"
 $virtualnetworkName = "vnet-test"
