@@ -1,18 +1,17 @@
-# Authenticate with managed identity (if running in Azure Automation)
-Connect-AzAccount -Identity
+Connect-AzAccount -Identity # Authenticate with managed identity (if running in Azure Automation)
 
 # Set variables
-$subscriptionId = "your-subscription-id""
-$resourceGroupName = "rg-redhatautomation"
-$vmName = "testvm"
+$subscriptionId = "your-subscription-id" # Subscription ID where the VM will be created
+$resourceGroupName = "your-resource-group-name" # Resource group name where the VM will be created
+$vmName = "your-vm-name" # Name of the VM to be created
 $location = "your-region" # e.g., "East US", "West Europe"
-$galleryName = "gallery"
-$imageDefinitionName = "definition-main"
-$imageVersion = "0.0.1"
-$adminUsername = "your username"
-$adminPassword = "" | ConvertTo-SecureString -AsPlainText -Force
-$vmSize = "Standard_B2as_v2"
-$virtualnetworkName = "vnet-test"
+$galleryName = "gallery" # Name of the Shared Image Gallery
+$imageDefinitionName = "definition-main" # Name of the image definition in the Shared Image Gallery
+$imageVersion = "0.0.1" # Version of the image to be used
+$adminUsername = "username" # Admin username for the VM
+$adminPassword = "" | ConvertTo-SecureString -AsPlainText -Force # Admin password for the VM (use a secure method to store and retrieve passwords)
+$vmSize = "Standard_B2as_v2" # Example VM size
+$virtualnetworkName = "vnet-test" # Example virtual network name
 
 # Select the subscription
 Select-AzSubscription -SubscriptionId $subscriptionId
@@ -54,3 +53,5 @@ New-AzVM -ResourceGroupName $resourceGroupName -Location $location -VM $vmConfig
 
 # Start the VM
 # Start-AzVM -ResourceGroupName "$resourceGroupName" -Name "$vmName"
+
+# Last Updated: 2025-03-21
